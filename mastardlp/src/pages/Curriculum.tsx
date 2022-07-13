@@ -18,7 +18,7 @@ export function Curriculum() {
                         <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                             <br />{' '}
                             <Text color={'black'} as={'span'}>
-                                最先端知識のインプットと専門人材の採用をお手軽な値段で両立
+                                カリキュラム
                             </Text>{' '}
                         </Heading>
                         <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
