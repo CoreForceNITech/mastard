@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export function Start() {
     return (
-        <Container maxW={'7xl'} p="12">
+        <Container maxW={'10xl'} p="12">
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -49,7 +49,7 @@ export function Start() {
                 </Flex>
             </Stack>
             <Box border='2px' borderColor='blue.400'>
-                <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+                <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }}>
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
                             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
@@ -61,7 +61,7 @@ export function Start() {
                             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
                                 私たちmastardはまだ始まったばかり。詳しく知りたい方は、ぜひお問合わせフォームへ。
                             </Text>
-                            <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                            <Stack direction={{ base: 'column', md: 'row' }} spacing={3}>
                                 <Button
                                     rounded={'full'}
                                     bg={'yellow.400'}
@@ -74,14 +74,15 @@ export function Start() {
                             </Stack>
                         </Stack>
                     </Flex>
-                    <Flex flex={1}>
-                        <Image
-                            alt={'Login Image'}
-                            objectFit={'cover'}
-                            src={
-                                'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-                            }
-                        />
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} maxW={'lg'}>
+                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                                <br />{' '}
+                                <Text color={'blue.400'} as={'span'}>
+                                    manabale
+                                </Text>{' '}
+                            </Heading>
+                        </Stack>
                     </Flex>
                 </Stack>
             </Box>
