@@ -13,25 +13,59 @@ import {
 
 export function Curriculum() {
     return (
-        <Container maxW={'7xl'} p="12">           
+        <Container maxW={'7xl'} p="12">
+            
+            <Heading color="gray.700" fontSize="3xl" fontFamily="body">
+                コースを探す
+            </Heading>        
 
-            {/* ここからカリキュラムのボックス */}
+            <Stack p="4" m="4">
+                <Stack direction="row" alignItems="center">
+                    <Text fontWeight="semibold">知能情報</Text>
+                </Stack>
+
+                <Stack
+                    direction={{ base: 'column', md: 'row' }}
+                    justifyContent="space-between">
+                    <Text fontSize={{ base: 'sm' }} textAlign={'left'} maxW={'4xl'}>
+                    知能の原理を究明し、知能処理を実現するモデル、アルゴリズム、プログラムに関する技術を深めることができます。 
+                    </Text>
+                    <Stack direction={{ base: 'column', md: 'row' }}>
+                        <Button
+                            rounded={'full'}
+                            bg={'yellow.400'}
+                            color={'black'}
+                            _hover={{
+                                bg: 'blue.500',
+                            }}>
+                            お問合せフォームへ
+                        </Button>
+                    </Stack>
+                </Stack>
+            </Stack>
+
             <Wrap p="6">
+                {/* ここからカリキュラムのボックス1 */}
                 <Box h="480px" w="300px" bg="#c9ffe8" boxShadow="xl" rounded="xl" p="10" overflow="hidden">
-                    <Box h="200px" mt="-6" mx="-6" rounded="xl" pos="relative">
+                    <Box h="210px" mt="-6" mx="-6" rounded="xl" pos="relative">
                         <Image
                             // src={img.src}
-                            fallbackSrc="https://via.placeholder.com/300x200"
+                            fallbackSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwyqz9CAQtweBZh-kkQekbVQBqq5kE74Xmaw&usqp=CAU/280x210"
                         />
                     </Box>
 
                     <Stack>
-                        <Heading color="gray.700" fontSize="lg" fontFamily="body">
-                        自然言語処理，談話解析，議論支援，情報可視化
-                        </Heading>
-                        <Text color="gray.500" fontSize="sm">
-                        自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
-                        </Text>
+                        <Box h="48px" overflow="hidden">
+                            <Heading color="gray.700" fontSize="lg" fontFamily="body">
+                            自然言語処理
+                            </Heading>
+                        </Box>
+                        <Box h="100px" overflow="auto">
+                            <Text color="gray.500" fontSize="sm">
+                            自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                            自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                            </Text>
+                        </Box>
                     </Stack>
                     <Stack mt="6" direction="row" spacing="4" align="center">
                         <Avatar
@@ -44,21 +78,26 @@ export function Curriculum() {
                     </Stack>
                 </Box>
 
+                {/* ここからカリキュラムのボックス2 */}
                 <Box h="480px" w="300px" bg="#F7FFC9" boxShadow="xl" rounded="xl" p="10" overflow="hidden">
-                    <Box h="200px" mt="-6" mx="-6" rounded="xl" pos="relative">
+                    <Box h="210px" mt="-6" mx="-6" rounded="xl" pos="relative">
                         <Image
                             // src={img.src}
-                            fallbackSrc="https://via.placeholder.com/300x200"
+                            fallbackSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwyqz9CAQtweBZh-kkQekbVQBqq5kE74Xmaw&usqp=CAU/280x210"
                         />
                     </Box>
 
                     <Stack>
-                        <Heading color="gray.700" fontSize="lg" fontFamily="body">
-                        自然言語処理，談話解析，議論支援，情報可視化
-                        </Heading>
-                        <Text color="gray.500" fontSize="sm">
-                        自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
-                        </Text>
+                        <Box h="48px" overflow="hidden">
+                            <Heading color="gray.700" fontSize="lg" fontFamily="body">
+                            自然言語処理，談話解析，議論支援，情報可視化
+                            </Heading>
+                        </Box>
+                        <Box h="100px" overflow="auto">
+                            <Text color="gray.500" fontSize="sm">
+                            行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                            </Text>
+                        </Box>
                     </Stack>
                     <Stack mt="6" direction="row" spacing="4" align="center">
                         <Avatar
