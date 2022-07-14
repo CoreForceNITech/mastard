@@ -8,6 +8,7 @@ import {
     Container,
     Box,
     Avatar,
+    Wrap,
 } from '@chakra-ui/react';
 
 export function Curriculum() {
@@ -15,64 +16,62 @@ export function Curriculum() {
         <Container maxW={'7xl'} p="12">           
 
             {/* ここからカリキュラムのボックス */}
-            <Flex p="6" w="full" maxW="350px">
-            <Box bg="#c9ffe8" boxShadow="xl" rounded="xl" p="6" overflow="hidden">
-                <Box h="200px" mt="-6" mx="-6" pos="relative">
-                    <Image
-                        // src={img.src}
-                        fallbackSrc="https://via.placeholder.com/300x200"
-                    />
+            <Wrap p="6">
+                <Box h="480px" w="300px" bg="#c9ffe8" boxShadow="xl" rounded="xl" p="10" overflow="hidden">
+                    <Box h="200px" mt="-6" mx="-6" rounded="xl" pos="relative">
+                        <Image
+                            // src={img.src}
+                            fallbackSrc="https://via.placeholder.com/300x200"
+                        />
+                    </Box>
+
+                    <Stack>
+                        <Heading color="gray.700" fontSize="lg" fontFamily="body">
+                        自然言語処理，談話解析，議論支援，情報可視化
+                        </Heading>
+                        <Text color="gray.500" fontSize="sm">
+                        自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                        </Text>
+                    </Stack>
+                    <Stack mt="6" direction="row" spacing="4" align="center">
+                        <Avatar
+                            src="http://www.srmt.nitech.ac.jp/img/member/siramatu2016.png"
+                        />
+                        <Stack direction="column" spacing="0" fontSize="sm">
+                            <Text fontWeight="600">白松 俊</Text>
+                            <Text color="gray.500">名古屋工業大学　教授</Text>
+                        </Stack>
+                    </Stack>
                 </Box>
 
-                <Stack>
-                    <Heading color="gray.700" fontSize="lg" fontFamily="body">
-                    自然言語処理，談話解析，議論支援，情報可視化
-                    </Heading>
-                    <Text color="gray.500" fontSize="sm">
-                    自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
-                    </Text>
-                </Stack>
-                <Stack mt="6" direction="row" spacing="4" align="center">
-                    <Avatar
-                        src="http://www.srmt.nitech.ac.jp/img/member/siramatu2016.png"
-                    />
-                    <Stack direction="column" spacing="0" fontSize="sm">
-                        <Text fontWeight="600">白松 俊</Text>
-                        <Text color="gray.500">名古屋工業大学　教授</Text>
-                    </Stack>
-                </Stack>
-            </Box>
-            </Flex>
+                <Box h="480px" w="300px" bg="#F7FFC9" boxShadow="xl" rounded="xl" p="10" overflow="hidden">
+                    <Box h="200px" mt="-6" mx="-6" rounded="xl" pos="relative">
+                        <Image
+                            // src={img.src}
+                            fallbackSrc="https://via.placeholder.com/300x200"
+                        />
+                    </Box>
 
-            {/* ここからカリキュラムのボックス */}
-            <Flex p="6" w="full" maxW="350px">
-            <Box bg="#F7FFC9" boxShadow="xl" rounded="xl" p="6" overflow="hidden">
-                <Box h="200px" mt="-6" mx="-6" pos="relative">
-                    <Image
-                        // src={img.src}
-                        fallbackSrc="https://via.placeholder.com/300x200"
-                    />
+                    <Stack>
+                        <Heading color="gray.700" fontSize="lg" fontFamily="body">
+                        自然言語処理，談話解析，議論支援，情報可視化
+                        </Heading>
+                        <Text color="gray.500" fontSize="sm">
+                        自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                        </Text>
+                    </Stack>
+                    <Stack mt="6" direction="row" spacing="4" align="center">
+                        <Avatar
+                            src="http://www.srmt.nitech.ac.jp/img/member/siramatu2016.png"
+                        />
+                        <Stack direction="column" spacing="0" fontSize="sm">
+                            <Text fontWeight="600">白松 俊</Text>
+                            <Text color="gray.500">名古屋工業大学　教授</Text>
+                        </Stack>
+                    </Stack>
                 </Box>
+            </Wrap>
 
-                <Stack>
-                    <Heading color="gray.700" fontSize="lg" fontFamily="body">
-                    自然言語処理，談話解析，議論支援，情報可視化
-                    </Heading>
-                    <Text color="gray.500" fontSize="sm">
-                    自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
-                    </Text>
-                </Stack>
-                <Stack mt="6" direction="row" spacing="4" align="center">
-                    <Avatar
-                        src="http://www.srmt.nitech.ac.jp/img/member/siramatu2016.png"
-                    />
-                    <Stack direction="column" spacing="0" fontSize="sm">
-                        <Text fontWeight="600">白松 俊</Text>
-                        <Text color="gray.500">名古屋工業大学　教授</Text>
-                    </Stack>
-                </Stack>
-            </Box>
-            </Flex>
 
 
             <Box border='2px' borderColor='blue.400'>
