@@ -32,7 +32,7 @@ export function Start() {
                         <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
                             理系の学問を学ぶ大学院生とのマンツーマン講義で、最先端の知識を簡単アップデート
                         </Text>
-                        <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                        <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={4}>
                             <Button
                                 rounded={'full'}
                                 bg={'blue.400'}
@@ -58,7 +58,7 @@ export function Start() {
 
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
-                    <Stack spacing={6} w={'full'}>
+                    <Stack spacing={6} w={'full'} maxW={'lg'}>
                         <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                             <br />{' '}
                             <Text color={'black'} as={'span'}>
@@ -69,7 +69,7 @@ export function Start() {
                             大学院生から学ぶこと　良さは一つだけじゃありません。<br />
                             mastardでしかできない、手軽でインパクトの大きい採用体験をご紹介！
                         </Text>
-                        <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                        <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={4}>
                             <Button
                                 rounded={'full'}
                                 bg={'blue.400'}
@@ -86,7 +86,7 @@ export function Start() {
 
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
-                    <Stack spacing={6} w={'full'} maxW={'lg'}>
+                    <Stack spacing={6} w={'full'}>
                         <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                             <br />{' '}
                             <Text color={'blue.400'} as={'span'}>
