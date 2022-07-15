@@ -48,6 +48,50 @@ export function Start() {
                     />
                 </Flex>
             </Stack>
+
+            <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+                <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                    <Stack spacing={6} w={'full'} maxW={'lg'}>
+                        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                            <br />{' '}
+                            <Text color={'black'} as={'span'}>
+                                mastardだからできること
+                            </Text>{' '}
+                        </Heading>
+                        <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+                            大学院生から学ぶこと　良さは一つだけじゃありません。mastardでしかできない、手軽でインパクトの大きい採用体験をご紹介！
+                        </Text>
+                        <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                            <Button
+                                rounded={'full'}
+                                bg={'blue.400'}
+                                color={'white'}
+                                _hover={{
+                                    bg: 'blue.500',
+                                }}>
+                                料金プランを見る
+                            </Button>
+                        </Stack>
+                    </Stack>
+                </Flex>
+            </Stack>
+
+            <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+                <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                    <Stack spacing={6} w={'full'} maxW={'lg'}>
+                        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                            <br />{' '}
+                            <Text color={'blue.400'} as={'span'}>
+                                サブスクリプションでも柔軟なサポートを
+                            </Text>{' '}
+                        </Heading>
+                        <Text fontSize={{ base: 'md', lg: 'lg' }} color={'blue.400'}>
+                            私たちは、柔軟なサービスとサポートの提供を心がけております。ぜひお試しください！
+                        </Text>
+                    </Stack>
+                </Flex>
+            </Stack>
+
             <Box border='2px' borderColor='blue.400'>
                 <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }}>
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
