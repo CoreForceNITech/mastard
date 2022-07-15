@@ -106,10 +106,6 @@ export function Start() {
             <div className="footer">
                 <Footer />
             </div>
-            <Link to={`/Business/`}>法人向けページ</Link>
-            <Link to={`/Coach/`}>大学院生向けページ</Link>
-            <Link to={`/Curriculum/`}>カリキュラム・プラン</Link>
-            <Link to={`/AboutCompany/`}>会社概要</Link>
         </Container>
     );
 }
