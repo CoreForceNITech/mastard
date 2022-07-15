@@ -13,7 +13,8 @@ import {
 export const Recruit: FC = () => {
     return (
         <div>
-            <Box border='2px' borderColor='blue.400'>
+            <Box border='2px' borderColor='blue.400' textAlign={'center'}
+                justifyContent={'center'}>
                 <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }}>
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -24,10 +25,13 @@ export const Recruit: FC = () => {
                                 </Text>{' '}
                             </Heading>
                             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-                                私たちmastardはまだ始まったばかり。詳しく知りたい方は、ぜひお問合わせフォームへ。
+                                私たちmastardはまだ始まったばかり。<br />
+                                詳しく知りたい方は、ぜひお問合わせフォームへ。
                             </Text>
-                            <Stack direction={{ base: 'column', md: 'row' }} spacing={3}>
+                            <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={3}>
                                 <Button
+                                    alignItems={'center'}
+                                    justifyContent={'center'}
                                     rounded={'full'}
                                     bg={'yellow.400'}
                                     color={'black'}

@@ -53,7 +53,7 @@ export function Start() {
 
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
-                    <Stack spacing={6} w={'full'} maxW={'lg'}>
+                    <Stack spacing={6} w={'full'}>
                         <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                             <br />{' '}
                             <Text color={'black'} as={'span'}>
@@ -61,7 +61,8 @@ export function Start() {
                             </Text>{' '}
                         </Heading>
                         <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-                            大学院生から学ぶこと　良さは一つだけじゃありません。mastardでしかできない、手軽でインパクトの大きい採用体験をご紹介！
+                            大学院生から学ぶこと　良さは一つだけじゃありません。<br />
+                            mastardでしかできない、手軽でインパクトの大きい採用体験をご紹介！
                         </Text>
                         <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                             <Button
