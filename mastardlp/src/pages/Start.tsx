@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import logo from '../images/manabale_logo.png';
 import { Recruit } from "../components/Recruit";
 import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 
 export function Start() {
     return (
@@ -101,6 +102,9 @@ export function Start() {
 
             <div className="recruit">
                 <Recruit />
+            </div>
+            <div className="footer">
+                <Footer />
             </div>
             <Link to={`/Business/`}>法人向けページ</Link>
             <Link to={`/Coach/`}>大学院生向けページ</Link>
