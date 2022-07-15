@@ -62,7 +62,7 @@ export const Header: FC = () => {
                         ))} */}
                         <Link href="/business">法人向けページ</Link>
                         <Link href="/coach">大学院生向けページ</Link>
-                        <Link href="/curriculumn">カリキュラム・プラン</Link>
+                        <Link href="/curriculum">カリキュラム・プラン</Link>
                         <Link href="/aboutcompany">会社概要</Link>
                         </HStack>
                     </HStack>

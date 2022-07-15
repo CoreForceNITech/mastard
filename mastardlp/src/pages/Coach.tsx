@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { Header } from '../components/Header';
 import { Recruit } from "../components/Recruit";
+import { Footer } from '../components/Footer';
 
 export function Coach() {
     return (
@@ -54,6 +55,9 @@ export function Coach() {
             </Stack>
             <div className="recruit">
                 <Recruit />
+            </div>
+            <div className="footer">
+                <Footer />
             </div>
         </Container>
     );
