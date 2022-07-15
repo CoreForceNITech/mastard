@@ -14,9 +14,12 @@ import { Header } from '../components/Header';
 export function Business() {
     return (
         <Container maxW={'7xl'} p="12">
+<<<<<<< HEAD
             <div className="recruit">
                 <Header />
             </div>
+=======
+>>>>>>> 068fe37f0c29749233a7fe12156c236dee93faec
 
 <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -68,6 +71,12 @@ export function Business() {
       </Flex>
     </Stack>
 
+<<<<<<< HEAD
+=======
+            <div className="recruit">
+                <Header />
+            </div>
+>>>>>>> 068fe37f0c29749233a7fe12156c236dee93faec
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={6} w={'full'} maxW={'lg'}>
