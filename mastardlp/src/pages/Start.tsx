@@ -11,10 +11,14 @@ import {
 import { Link } from "react-router-dom";
 import logo from '../images/manabale_logo.png';
 import { Recruit } from "../components/Recruit";
+import { Header } from '../components/Header';
 
 export function Start() {
     return (
         <Container maxW={'10xl'} p="12">
+            <div className="recruit">
+                <Header />
+            </div>
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={6} w={'full'} maxW={'lg'}>

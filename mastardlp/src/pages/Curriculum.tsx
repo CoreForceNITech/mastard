@@ -10,11 +10,14 @@ import {
     Avatar,
     Wrap,
 } from '@chakra-ui/react';
+import { Header } from '../components/Header';
 
 export function Curriculum() {
     return (
         <Container maxW={'7xl'} p="12">
-
+            <div className="recruit">
+                <Header />
+            </div>
             <Heading color="gray.700" fontSize="3xl" fontFamily="body">
                 コースを探す
             </Heading>

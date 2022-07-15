@@ -9,12 +9,14 @@ import {
     Box,
     useBreakpointValue,
 } from '@chakra-ui/react';
+import { Header } from '../components/Header';
 
 export function Business() {
     return (
 
         
         <Container maxW={'7xl'} p="12">
+<<<<<<< Updated upstream
 
 <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -66,6 +68,11 @@ export function Business() {
       </Flex>
     </Stack>
 
+=======
+            <div className="recruit">
+                <Header />
+            </div>
+>>>>>>> Stashed changes
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={6} w={'full'} maxW={'lg'}>

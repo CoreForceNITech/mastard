@@ -8,10 +8,14 @@ import {
     Container,
     Box,
 } from '@chakra-ui/react';
+import { Header } from '../components/Header';
 
 export function Coach() {
     return (
         <Container maxW={'7xl'} p="12">
+            <div className="recruit">
+                <Header />
+            </div>
             <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={6} w={'full'} maxW={'lg'}>
