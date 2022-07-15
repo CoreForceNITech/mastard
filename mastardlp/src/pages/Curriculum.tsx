@@ -14,10 +14,10 @@ import {
 export function Curriculum() {
     return (
         <Container maxW={'7xl'} p="12">
-            
+
             <Heading color="gray.700" fontSize="3xl" fontFamily="body">
                 コースを探す
-            </Heading>        
+            </Heading>
 
             <Stack p="4" m="4">
                 <Stack direction="row" alignItems="center">
@@ -28,7 +28,7 @@ export function Curriculum() {
                     direction={{ base: 'column', md: 'row' }}
                     justifyContent="space-between">
                     <Text fontSize={{ base: 'sm' }} textAlign={'left'} maxW={'4xl'}>
-                    知能の原理を究明し、知能処理を実現するモデル、アルゴリズム、プログラムに関する技術を深めることができます。 
+                        知能の原理を究明し、知能処理を実現するモデル、アルゴリズム、プログラムに関する技術を深めることができます。
                     </Text>
                     <Stack direction={{ base: 'column', md: 'row' }}>
                         <Button
@@ -54,16 +54,20 @@ export function Curriculum() {
                         />
                     </Box>
 
-                    <Stack>
+                    <Stack
+                        align={'center'}
+                        textAlign={'center'}
+                        justifyContent={'center'}
+                    >
                         <Box h="48px" overflow="hidden">
                             <Heading color="gray.700" fontSize="lg" fontFamily="body">
-                            自然言語処理
+                                自然言語処理
                             </Heading>
                         </Box>
                         <Box h="100px" overflow="auto">
                             <Text color="gray.500" fontSize="sm">
-                            自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
-                            自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                                自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                                自然言語処理やLinked Open Data、行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
                             </Text>
                         </Box>
                     </Stack>
@@ -87,15 +91,19 @@ export function Curriculum() {
                         />
                     </Box>
 
-                    <Stack>
+                    <Stack
+                        align={'center'}
+                        textAlign={'center'}
+                        justifyContent={'center'}
+                    >
                         <Box h="48px" overflow="hidden">
                             <Heading color="gray.700" fontSize="lg" fontFamily="body">
-                            自然言語処理，談話解析，議論支援，情報可視化
+                                自然言語処理，談話解析，議論支援，情報可視化
                             </Heading>
                         </Box>
                         <Box h="100px" overflow="auto">
                             <Text color="gray.500" fontSize="sm">
-                            行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
+                                行動センシング技術などのAIの要素技術を使って、人々のコラボレーションを支援する技術を研究・開発しています。
                             </Text>
                         </Box>
                     </Stack>
