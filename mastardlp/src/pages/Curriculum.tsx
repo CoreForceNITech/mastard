@@ -54,12 +54,13 @@ export function Curriculum() {
                         />
                     </Box>
 
-                    <Stack
-                        align={'center'}
+                    <Stack>
+                        <Box 
+                        h="48px" 
+                        overflow="hidden"
                         textAlign={'center'}
                         justifyContent={'center'}
-                    >
-                        <Box h="48px" overflow="hidden">
+                        >
                             <Heading color="gray.700" fontSize="lg" fontFamily="body">
                                 自然言語処理
                             </Heading>
@@ -91,12 +92,13 @@ export function Curriculum() {
                         />
                     </Box>
 
-                    <Stack
-                        align={'center'}
+                    <Stack>
+                        <Box 
+                        h="48px" 
+                        overflow="hidden"
                         textAlign={'center'}
                         justifyContent={'center'}
-                    >
-                        <Box h="48px" overflow="hidden">
+                        >
                             <Heading color="gray.700" fontSize="lg" fontFamily="body">
                                 自然言語処理，談話解析，議論支援，情報可視化
                             </Heading>
