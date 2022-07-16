@@ -13,6 +13,7 @@ import logo from '../images/manabale_logo.png';
 import { Recruit } from "../components/Recruit";
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { DemoRegisterButton } from "../components/DemoRegisterButton";
 
 export function Start() {
     return (
@@ -33,15 +34,9 @@ export function Start() {
                             理系の学問を学ぶ大学院生とのマンツーマン講義で、最先端の知識を簡単アップデート
                         </Text>
                         <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={4}>
-                            <Button
-                                rounded={'full'}
-                                bg={'blue.400'}
-                                color={'white'}
-                                _hover={{
-                                    bg: 'blue.500',
-                                }}>
-                                デモに登録する
-                            </Button>
+                            <div>
+                                <DemoRegisterButton />
+                            </div>
                         </Stack>
                     </Stack>
                 </Flex>

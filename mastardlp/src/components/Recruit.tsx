@@ -9,6 +9,7 @@ import {
     Container,
     Box,
 } from '@chakra-ui/react';
+import { InquiryButton } from "./InquiryButton";
 
 export const Recruit: FC = () => {
     return (
@@ -29,17 +30,9 @@ export const Recruit: FC = () => {
                                 詳しく知りたい方は、ぜひお問合わせフォームへ。
                             </Text>
                             <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={3}>
-                                <Button
-                                    alignItems={'center'}
-                                    justifyContent={'center'}
-                                    rounded={'full'}
-                                    bg={'yellow.400'}
-                                    color={'black'}
-                                    _hover={{
-                                        bg: 'blue.500',
-                                    }}>
-                                    お問合せフォームへ
-                                </Button>
+                                <div>
+                                    <InquiryButton />
+                                </div>
                             </Stack>
                         </Stack>
                     </Flex>
