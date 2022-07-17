@@ -22,7 +22,7 @@ export const InquiryButton: FC = () => {
                 _hover={{
                     bg: 'blue.500',
                 }}>
-                お問合せフォームへ
+                <a target="_blank" href='https://forms.gle/V2ojtx2QBHnRzkS36'>お問合せフォーム</a>
             </Button>
         </div>
     );

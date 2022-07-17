@@ -9,6 +9,7 @@ import {
     Container,
     Box,
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 export const DemoRegisterButton: FC = () => {
     return (
@@ -22,7 +23,7 @@ export const DemoRegisterButton: FC = () => {
                 _hover={{
                     bg: 'blue.500',
                 }}>
-                デモに登録する
+                <a target="_blank" href='https://forms.gle/vdWcCeCgv6FHFNFX8'>デモに登録する</a>
             </Button>
         </div>
     );
