@@ -7,6 +7,7 @@ import {
     Text,
     Container,
     Box,
+    Center,
 } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
 import logo from '../images/manabale_logo.png';
@@ -43,7 +44,7 @@ export function Start() {
                 <Flex flex={1}>
                     <Image
                         alt={'Manabale Image'}
-                        objectFit={'cover'}
+                        objectFit={'contain'}
                         src={
                             logo
                         }

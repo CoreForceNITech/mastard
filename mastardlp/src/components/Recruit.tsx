@@ -10,6 +10,7 @@ import {
     Box,
 } from '@chakra-ui/react';
 import { InquiryButton } from "./InquiryButton";
+import logo from '../images/manabale_logo.png';
 
 export const Recruit: FC = () => {
     return (
@@ -38,12 +39,13 @@ export const Recruit: FC = () => {
                     </Flex>
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
-                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                                <br />{' '}
-                                <Text color={'blue.400'} as={'span'}>
-                                    manabale
-                                </Text>{' '}
-                            </Heading>
+                            <Image
+                                alt={'Manabale Image'}
+                                objectFit={'contain'}
+                                src={
+                                    logo
+                                }
+                            />
                         </Stack>
                     </Flex>
                 </Stack>
