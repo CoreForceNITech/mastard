@@ -9,7 +9,11 @@ import {
     Box,
     useBreakpointValue,
 } from '@chakra-ui/react';
+import { Recruit } from "../components/Recruit";
 import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { InquiryButton } from "../components/InquiryButton";
+import logo from '../images/manabale_logo.png';
 
 export function Business() {
     return (
@@ -18,128 +22,138 @@ export function Business() {
                 <Header />
             </div>
 
-<Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-      <Flex p={8} flex={1} align={'center'} justify={'center'}>
-        <Stack spacing={6} w={'full'} maxW={'lg'}>
-          <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-            <Text
-              as={'span'}
-              position={'relative'}
-              _after={{
-                content: "''",
-                width: 'full',
-                height: useBreakpointValue({ base: '20%', md: '30%' }),
-                position: 'absolute',
-                bottom: 1,
-                left: 0,
-                bg: '#F4D428',
-                zIndex: -1,
-              }}>
-              社内教育も、大学院生人材の採用も。
-            </Text>
-          </Heading>
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-            ・専門力の高い大学院生が、社内の企業研修をサポート。<br />
-            ・カリキュラムは社員の興味に合ったものを選択可能。<br />
-            ・会社の底力アップと、大学院生の採用を少ないコストで両立可能。<br />
-          </Text>
-          <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-            <Button
-              rounded={'full'}
-              bg={'blue.400'}
-              color={'white'}
-              _hover={{
-                bg: 'blue.500',
-              }}>
-              Create Project
-            </Button>
-            <Button rounded={'full'}>How It Works</Button>
-          </Stack>
-        </Stack>
-      </Flex>
-      <Flex flex={1}>
-        <Image
-          alt={'Login Image'}
-          objectFit={'cover'}
-          src={
-            'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-          }
-        />
-      </Flex>
-    </Stack>
-
-            <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+            <Stack bg={"gray.100"} minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
                 <Flex p={8} flex={1} align={'center'} justify={'center'}>
                     <Stack spacing={6} w={'full'} maxW={'lg'}>
-                        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                            <br />{' '}
-                            <Text color={'black'} as={'span'}>
-                                最先端知識のインプットと専門人材の採用をお手軽な値段で両立
-                            </Text>{' '}
-                        </Heading>
-                        <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-                            理系の学問を学ぶ大学院生とのマンツーマン講義で、最先端の知識を簡単アップデート
+                    <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                        <Text
+                        as={'span'}
+                        position={'relative'}
+                        _after={{
+                            content: "''",
+                            width: 'full',
+                            height: useBreakpointValue({ base: '20%', md: '30%' }),
+                            position: 'absolute',
+                            bottom: 1,
+                            left: 0,
+                            bg: '#F4D428',
+                            zIndex: -1,
+                        }}>
+                        社内教育も、大学院生人材の採用も。
                         </Text>
-                        <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-                            <Button
-                                rounded={'full'}
-                                bg={'blue.400'}
-                                color={'white'}
-                                _hover={{
-                                    bg: 'blue.500',
-                                }}>
-                                デモに登録する
-                            </Button>
-                        </Stack>
+                    </Heading>
+                    <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+                        ・専門力の高い大学院生が、社内の企業研修をサポート。<br />
+                        ・カリキュラムは社員の興味に合ったものを選択可能。<br />
+                        ・会社の底力アップと、大学院生の採用を少ないコストで両立可能。<br />
+                    </Text>
+                    <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                        <div>
+                            <InquiryButton />
+                        </div>
+                    </Stack>
                     </Stack>
                 </Flex>
                 <Flex flex={1}>
                     <Image
-                        alt={'Login Image'}
-                        objectFit={'cover'}
-                        src={
-                            'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-                        }
+                    alt={'Login Image'}
+                    objectFit={'cover'}
+                    src={
+                        'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+                    }
                     />
                 </Flex>
             </Stack>
-            <Box border='2px' borderColor='blue.400'>
-                <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+
+            <Box textAlign={'center'}
+                justifyContent={'center'}>
+                <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }}>
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
-                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                            <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}>
                                 <br />{' '}
-                                <Text color={'blue.400'} as={'span'}>
-                                    mastardで学ぶ・採用する
+                                <Text color={'gray.700'} as={'span'}>
+                                    mastardならではの強み
                                 </Text>{' '}
                             </Heading>
-                            <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-                                私たちmastardはまだ始まったばかり。詳しく知りたい方は、ぜひお問合わせフォームへ。
+                            <Text fontSize={{ base: 'sm', lg: 'lg' }} color={'gray.500'}>
+                                大学院生から学ぶこと 良さは一つだけじゃありません<br />
+                                mastardでしかできない、手軽でインパクトの大きい
+                                採用体験をご紹介！
                             </Text>
-                            <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-                                <Button
-                                    rounded={'full'}
-                                    bg={'yellow.400'}
-                                    color={'black'}
-                                    _hover={{
-                                        bg: 'blue.500',
-                                    }}>
-                                    お問合せフォームへ
-                                </Button>
+                            <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={3}>
+                                <div>
+                                    <InquiryButton />
+                                </div>
                             </Stack>
                         </Stack>
                     </Flex>
-                    <Flex flex={1}>
-                        <Image
-                            alt={'Login Image'}
-                            objectFit={'cover'}
-                            src={
-                                'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-                            }
-                        />
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} maxW={'lg'}>
+                            <Image
+                                alt={'Manabale Image'}
+                                objectFit={'contain'}
+                                src={
+                                    logo
+                                }
+                            />
+                        </Stack>
                     </Flex>
                 </Stack>
             </Box>
+
+            <Box bg={"#EEAC48"} textAlign={'center'}
+                justifyContent={'center'}>
+                <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }}>
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} maxW={'lg'}>
+                            <Image
+                                alt={'Manabale Image'}
+                                objectFit={'contain'}
+                                src={
+                                    logo
+                                }
+                            />
+                        </Stack>
+                    </Flex>
+
+                    <Flex p={8} flex={1} align={'center'} justify={'center'}>
+                        <Stack spacing={6} w={'full'} maxW={'lg'}>
+                            <Heading fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
+                                <br />{' '}
+                                <Text color={"gray"} as={'span'}>
+                                    mastardならではの強み
+                                </Text>
+                            </Heading>
+                            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                                <Text color={'white'} as={'span'}>
+                                    詳しく知りたいを支える理系学生
+                                </Text>
+                            </Heading>
+                            <Text color={'white'} fontSize={{ base: 'sm', lg: 'lg' }} >
+                                大学院生から学ぶこと 良さは一つだけじゃありません<br />
+                                mastardでしかできない、手軽でインパクトの大きい
+                                採用体験をご紹介！
+                            </Text>
+                            <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={3}>
+                                <div>
+                                    <InquiryButton />
+                                </div>
+                            </Stack>
+                        </Stack>
+                    </Flex>
+                </Stack>
+            </Box>
+
+            <Box p={4} />
+
+            <div className="recruit">
+                <Recruit />
+            </div>
+            <div className="footer">
+                <Footer />
+            </div>
+
         </Container>
     );
 }
