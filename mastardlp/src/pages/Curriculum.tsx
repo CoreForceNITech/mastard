@@ -36,17 +36,9 @@ export function Curriculum() {
                     <Text fontSize={{ base: 'sm' }} textAlign={'left'} maxW={'4xl'}>
                         知能の原理を究明し、知能処理を実現するモデル、アルゴリズム、プログラムに関する技術を深めることができます。
                     </Text>
-                    <Stack direction={{ base: 'column', md: 'row' }}>
-                        <Button
-                            rounded={'full'}
-                            bg={'yellow.400'}
-                            color={'black'}
-                            _hover={{
-                                bg: 'blue.500',
-                            }}>
-                            お問合せフォームへ
-                        </Button>
-                    </Stack>
+                    <div>
+                        <InquiryButton />
+                    </div>
                 </Stack>
             </Stack>
 
