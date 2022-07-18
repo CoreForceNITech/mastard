@@ -8,11 +8,12 @@ import {
     Container,
     Box,
 } from '@chakra-ui/react';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 
 export function AboutCompany() {
     return (
-        <Container maxW={'7xl'} p="12">
+        <Container maxW={'false'} p="12">
             <div className="recruit">
                 <Header />
             </div>
@@ -88,6 +89,9 @@ export function AboutCompany() {
                     </Flex>
                 </Stack>
             </Box>
+            <div className="footer">
+                  <Footer />
+            </div>
         </Container>
     );
 }
