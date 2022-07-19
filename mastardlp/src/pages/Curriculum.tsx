@@ -12,7 +12,7 @@ import { Subjects } from '../components/Subjects';
 
 export function Curriculum() {
     return (
-        <Container maxW={'7xl'} p="12">
+        <Container maxW={'10xl'} p="12">
             <div className="recruit">
                 <Header />
             </div>
