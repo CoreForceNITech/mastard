@@ -14,6 +14,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { InquiryButton } from "../components/InquiryButton";
 import logo from '../images/manabale_logo.png';
+import through from '../images/manabale_logo_through.png';
 import syuma_lesson from '../images/syuma_lesson.png';
 
 export function Business() {
@@ -87,7 +88,7 @@ export function Business() {
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
                             <Image
-                                alt={'SyumaLesson Image'}
+                                alt={'Syuma Lesson'}
                                 objectFit={'contain'}
                                 src={
                                     logo
@@ -104,10 +105,10 @@ export function Business() {
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
                             <Image
-                                alt={'Manabale Image'}
+                                alt={'Manabale Through'}
                                 objectFit={'contain'}
                                 src={
-                                    logo
+                                    through
                                 }
                             />
                         </Stack>
