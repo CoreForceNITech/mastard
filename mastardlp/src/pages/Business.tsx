@@ -16,6 +16,8 @@ import { InquiryButton } from "../components/InquiryButton";
 import logo from '../images/manabale_logo.png';
 import through from '../images/manabale_logo_through.png';
 import syuma_lesson from '../images/syuma_lesson.png';
+import mastard_white from '../images/mastard_white.png';
+
 
 export function Business() {
     return (
@@ -51,7 +53,7 @@ export function Business() {
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
                             <Image
-                                alt={'Manabale Image'}
+                                alt={'Syuma Lesson'}
                                 objectFit={'contain'}
                                 src={
                                     syuma_lesson
@@ -88,10 +90,10 @@ export function Business() {
                     <Flex p={8} flex={1} align={'center'} justify={'center'}>
                         <Stack spacing={6} w={'full'} maxW={'lg'}>
                             <Image
-                                alt={'Syuma Lesson'}
+                                alt={'Mastard White'}
                                 objectFit={'contain'}
                                 src={
-                                    logo
+                                    mastard_white
                                 }
                             />
                         </Stack>
