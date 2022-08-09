@@ -21,7 +21,7 @@ import { BiMailSend } from 'react-icons/bi';
 import React from 'react';
 
 {/* 画面上部のリンク集→Boldに変更したい */}
-const Links = ['法人向け', '大学生・大学院生向け', 'カリキュラム・プラン'];
+//const Links = ['/aboutcompany', '/curriculum', '大学生・大学院生向け', '大学生・大学院生向け', ];
 
 {/* リンクの状態 */}
 const NavLink = ({ children }: { children: ReactNode }) => (
@@ -142,15 +142,15 @@ export const Footer: FC = () => {
                     {/* Company */}
                     <Stack align={'flex-start'}>
                             <ListHeader>Company</ListHeader>
-                            <Link href={'#'}>会社情報</Link>
-                            <Link href={'#'}>カリキュラム・プラン</Link>
+                            <Link href={'/aboutcompany'}>会社情報</Link>
+                            <Link href={'/curriculum'}>カリキュラム・プラン</Link>
                     </Stack>
                 
                     {/* Support */}
                     <Stack align={'flex-start'}>
                             <ListHeader>Support</ListHeader>
-                            <Link href={'#'}>法人プランを導入する</Link>
-                            <Link href={'#'}>チューターに登録する</Link>
+                            <Link href={'/business'}>法人プランを導入する</Link>
+                            <Link href={'/coach'}>チューターに登録する</Link>
                     </Stack>
 
                     {/* Stay up to date */}
