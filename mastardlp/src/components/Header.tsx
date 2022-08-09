@@ -15,6 +15,7 @@ import {
     SimpleGrid,
   } from '@chakra-ui/react';
 import { FC, ReactNode } from 'react';
+import mastard from "../images/mastard-mini.png"
 
 {/* 画面上部のリンク集→Boldに変更したい */}
 
@@ -52,7 +53,11 @@ export const Header: FC = () => {
                     /> */}
 
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box>manabale</Box>
+                    <Link href='/'>
+                          <Box>
+                            <img src={mastard} alt="mastard" width={100} height={80}/>
+                          </Box>
+                        </Link>
                         <HStack
                         as={'nav'}
                         spacing={4}

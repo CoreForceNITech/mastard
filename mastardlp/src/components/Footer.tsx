@@ -15,6 +15,7 @@ import {
 import { FC, ReactNode } from 'react';
 //import { Link } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import mastard from "../images/mastard-mini.png";
 
 import { BiMailSend } from 'react-icons/bi';
 import React from 'react';
@@ -109,9 +110,11 @@ export const Footer: FC = () => {
                     spacing={8}>
                     <Stack spacing={6}>
 
-                        <Box>
-                                <Logo color={useColorModeValue('gray.700', 'white')} />
-                        </Box>
+                        <Link href='/'>
+                          <Box>
+                            <img src={mastard} alt="mastard" width={100} height={80}/>
+                          </Box>
+                        </Link>
 
                         {/* © 2022 manabale. All rights reserved */}
                         <Text fontSize={'sm'}>
