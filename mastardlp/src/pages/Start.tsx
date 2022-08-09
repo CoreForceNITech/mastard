@@ -9,12 +9,12 @@ import {
     Box,
     Center,
 } from '@chakra-ui/react';
-import { Link } from "react-router-dom";
 import logo from '../images/manabale_logo.png';
 import { Recruit } from "../components/Recruit";
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { DemoRegisterButton } from "../components/DemoRegisterButton";
+import { InquiryButton } from '../components/InquiryButton';
 
 export function Start() {
     return (
@@ -66,15 +66,9 @@ export function Start() {
                             mastardでしかできない、手軽でインパクトの大きい採用体験をご紹介！
                         </Text>
                         <Stack align={'center'} justify={'center'} direction={{ base: 'column', md: 'row' }} spacing={4}>
-                            <Button
-                                rounded={'full'}
-                                bg={'blue.400'}
-                                color={'white'}
-                                _hover={{
-                                    bg: 'blue.500',
-                                }}>
-                                料金プランを見る
-                            </Button>
+                            <div>
+                                <InquiryButton />
+                            </div>
                         </Stack>
                     </Stack>
                 </Flex>
@@ -92,6 +86,9 @@ export function Start() {
                         <Text fontSize={{ base: 'md', lg: 'lg' }} color={'blue.400'}>
                             私たちは、柔軟なサービスとサポートの提供を心がけております。ぜひお試しください！
                         </Text>
+                        <div>
+                            <InquiryButton />
+                        </div>
                     </Stack>
                 </Flex>
             </Stack>
