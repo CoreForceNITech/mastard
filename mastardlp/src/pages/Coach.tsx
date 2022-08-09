@@ -15,7 +15,7 @@ import { DemoRegisterButton } from "../components/DemoRegisterButton";
 
 export function Coach() {
     return (
-        <Container maxW={'7xl'} p="12">
+        <Container maxW={'10xl'} p="12">
             <div className="recruit">
                 <Header />
             </div>
