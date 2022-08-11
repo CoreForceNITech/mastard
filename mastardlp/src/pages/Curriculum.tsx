@@ -33,10 +33,6 @@ export function Curriculum() {
                     <CoachIntroductionCard />
                 </div>
 
-                {/* 講師紹介カード2 */}
-                <div className="coach_introduction_card">
-                    <CoachIntroductionCard />
-                </div>
 
             </Wrap>
 
