@@ -73,7 +73,7 @@ export const Header: FC = () => {
                     </HStack>
                     
                     {/* Action */}
-                    <Flex alignItems={'center'}>
+                    {/* <Flex alignItems={'center'}>
                         <Button
                             variant={'solid'}
                             colorScheme = {'blue'}
@@ -104,7 +104,7 @@ export const Header: FC = () => {
                                 <MenuItem>Link 3</MenuItem>
                             </MenuList>
                         </Menu>
-                    </Flex>
+                    </Flex> */}
 
                     {/* {isOpen ? (
                         <Box pb={4} display={{ md: 'none' }}>
